@@ -1,0 +1,818 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Akshat Anand's personal portfolio showcasing Data Analytics, Business Intelligence, Software Development and projects.">
+
+    <meta name="author" content="Akshat Anand">
+
+    <title>Akshat Anand | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+
+    <!-- JavaScript -->
+    <!-- Three.js (3D engine) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+
+    <!-- 3D scene + tilt/motion effects + original interactions -->
+    <script src="scene3d.js" defer></script>
+    <script src="effects.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- 3D background scene (Three.js) -->
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="header" id="header">
+
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                Akshat<span class="logo-highlight">.</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+
+            <ul class="nav-menu" id="nav-menu">
+
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+
+            </ul>
+
+            <div class="nav-actions">
+
+                <!-- Theme Toggle -->
+                <button class="theme-toggle" id="theme-toggle"
+                        aria-label="Toggle dark and light theme">
+                    <i data-lucide="sun"></i>
+                </button>
+
+                <a href="#contact" class="nav-contact">
+                    Let's Talk <i data-lucide="arrow-up-right"></i>
+                </a>
+
+                <!-- Mobile Menu -->
+                <button class="menu-toggle" id="menu-toggle"
+                        aria-label="Open navigation menu">
+                    <i data-lucide="menu"></i>
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- ================= HERO SECTION ================= -->
+
+        <section class="hero section" id="home">
+
+            <div class="container hero-container">
+
+                <div class="hero-content">
+
+                    <div class="availability">
+                        <span class="availability-dot"></span>
+                        Welcome to my digital space
+                    </div>
+
+                    <p class="hero-greeting">HELLO, I'M</p>
+
+                    <h1 class="hero-title">
+                        Akshat
+                        <span>Anand.</span>
+                    </h1>
+
+                    <h2 class="hero-subtitle">
+                        I turn data into insights
+                        <br>
+                        and ideas into <span>digital solutions.</span>
+                    </h2>
+
+                    <p class="hero-description">
+                        I'm passionate about Data Analytics, Business Intelligence
+                        and Software Development. I enjoy solving problems,
+                        exploring technology and building meaningful projects.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#projects" class="btn btn-primary">
+                            Explore My Work
+                            <i data-lucide="arrow-up-right"></i>
+                        </a>
+
+                        <a href="Akshat_Anand_Resume.pdf"
+                           class="btn btn-secondary"
+                           download="Akshat_Anand_Resume.pdf">
+                            Download Resume
+                            <i data-lucide="download"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="hero-socials">
+
+                        <span>CONNECT WITH ME</span>
+
+                        <a href="https://www.linkedin.com/in/akshat-anand-6625b22a6"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="LinkedIn">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+
+                        <a href="https://github.com/Bk-Akshat"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="GitHub">
+                            <i data-lucide="github"></i>
+                        </a>
+
+                        <a href="mailto:akshat31anand@gmail.com"
+                           aria-label="Email">
+                            <i data-lucide="mail"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HERO PROFILE CARD -->
+
+                <div class="hero-visual">
+
+                    <div class="hero-glow"></div>
+
+                    <div class="profile-card">
+
+                        <div class="profile-card-top">
+                            <span>PROFILE.EXE</span>
+                            <span class="profile-status">● ONLINE</span>
+                        </div>
+
+                        <div class="profile-avatar">
+                            <span>AA</span>
+                        </div>
+
+                        <h3>Akshat Anand</h3>
+
+                        <p>Data Analytics & Software Development</p>
+
+                        <div class="profile-divider"></div>
+
+                        <div class="profile-details">
+                            <div>
+                                <span>LOCATION</span>
+                                <strong>India</strong>
+                            </div>
+
+                            <div>
+                                <span>EDUCATION</span>
+                                <strong>B.Tech - IT</strong>
+                            </div>
+
+                            <div>
+                                <span>INTERESTS</span>
+                                <strong>Data & Technology</strong>
+                            </div>
+                        </div>
+
+                        <div class="profile-card-bottom">
+                            <span>BUILDING. LEARNING. GROWING.</span>
+                            <i data-lucide="terminal"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="floating-tag tag-one">
+                        <i data-lucide="database"></i>
+                        Data Analytics
+                    </div>
+
+                    <div class="floating-tag tag-two">
+                        <i data-lucide="code-2"></i>
+                        Development
+                    </div>
+
+                </div>
+
+            </div>
+
+            <a href="#about" class="scroll-indicator">
+                <span>SCROLL TO EXPLORE</span>
+                <i data-lucide="arrow-down"></i>
+            </a>
+
+        </section>
+
+
+        <!-- ================= ABOUT SECTION ================= -->
+
+        <section class="about section" id="about">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-label">01 / ABOUT ME</span>
+                    <h2>More than just <span>code & numbers.</span></h2>
+                    <p>Get to know the person behind the projects.</p>
+                </div>
+
+                <div class="about-grid">
+
+                    <div class="about-content">
+                        <h3>Curious mind. Analytical thinking. Creative execution.</h3>
+
+                        <p>
+                            I'm Akshat Anand, an Information Technology graduate
+                            from Chandigarh Engineering College, Mohali.
+                        </p>
+
+                        <p>
+                            My interests lie at the intersection of Data Analytics
+                            and Software Development. I enjoy working with data,
+                            discovering meaningful insights and developing
+                            applications that solve real-world problems.
+                        </p>
+
+                        <p>
+                            I'm continuously learning new technologies and
+                            improving my technical and problem-solving skills.
+                        </p>
+
+                        <a href="#contact" class="text-link">
+                            Let's work together
+                            <i data-lucide="arrow-up-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="about-stats">
+
+                        <div class="stat-card">
+                            <i data-lucide="graduation-cap"></i>
+                            <h3>B.Tech</h3>
+                            <p>Information Technology</p>
+                        </div>
+
+                        <div class="stat-card">
+                            <i data-lucide="layers"></i>
+                            <h3>Multiple</h3>
+                            <p>Technical Projects</p>
+                        </div>
+
+                        <div class="stat-card">
+                            <i data-lucide="brain"></i>
+                            <h3>Always</h3>
+                            <p>Learning & Exploring</p>
+                        </div>
+
+                        <div class="stat-card">
+                            <i data-lucide="target"></i>
+                            <h3>Focused</h3>
+                            <p>Growth & Innovation</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SKILLS SECTION ================= -->
+
+        <section class="skills section" id="skills">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-label">02 / MY EXPERTISE</span>
+                    <h2>Tools I use to <span>create impact.</span></h2>
+                    <p>Technologies and tools I'm familiar with.</p>
+                </div>
+
+                <div class="skills-grid">
+
+                    <div class="skill-category">
+                        <i data-lucide="chart-no-axes-combined"></i>
+                        <h3>Data Analytics & BI</h3>
+
+                        <div class="skill-tags">
+                            <span>Power BI</span>
+                            <span>Tableau</span>
+                            <span>Microsoft Excel</span>
+                            <span>Data Visualization</span>
+                            <span>DAX</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <i data-lucide="code-2"></i>
+                        <h3>Programming</h3>
+
+                        <div class="skill-tags">
+                            <span>Python</span>
+                            <span>Java</span>
+                            <span>C</span>
+                            <span>JavaScript</span>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <i data-lucide="database"></i>
+                        <h3>Database & Backend</h3>
+
+                        <div class="skill-tags">
+                            <span>MySQL</span>
+                            <span>MongoDB</span>
+                            <span>SQLite</span>
+                            <span>Flask</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <i data-lucide="globe"></i>
+                        <h3>Web Development</h3>
+
+                        <div class="skill-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Streamlit</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <i data-lucide="brain-circuit"></i>
+                        <h3>Data Science & ML</h3>
+
+                        <div class="skill-tags">
+                            <span>Pandas</span>
+                            <span>NumPy</span>
+                            <span>Scikit-learn</span>
+                            <span>Matplotlib</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <i data-lucide="wrench"></i>
+                        <h3>Tools & Platforms</h3>
+
+                        <div class="skill-tags">
+                            <span>VS Code</span>
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>Google BigQuery</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROJECTS SECTION ================= -->
+
+        <section class="projects section" id="projects">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-label">03 / MY WORK</span>
+                    <h2>Projects that bring <span>ideas to life.</span></h2>
+                    <p>A selection of my work across analytics and development.</p>
+                </div>
+
+                <div class="project-filters">
+
+                    <button class="filter-btn active" data-filter="all">
+                        All Projects
+                    </button>
+
+                    <button class="filter-btn" data-filter="analytics">
+                        Data Analytics
+                    </button>
+
+                    <button class="filter-btn" data-filter="development">
+                        Development
+                    </button>
+
+                    <button class="filter-btn" data-filter="machine-learning">
+                        Machine Learning
+                    </button>
+
+                </div>
+
+                <div class="projects-grid">
+
+                    <article class="project-card" data-category="analytics">
+
+                        <div class="project-image project-image-one">
+                            <i data-lucide="chart-no-axes-combined"></i>
+                            <span>01 / ANALYTICS</span>
+                        </div>
+
+                        <div class="project-info">
+                            <span class="project-type">DATA ANALYTICS</span>
+                            <h3>Influencer Analytics Dashboard</h3>
+
+                            <p>
+                                An interactive dashboard to explore influencer
+                                performance, engagement and growth potential.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Streamlit</span>
+                                <span>Power BI</span>
+                            </div>
+
+                            <a href="#" class="project-link">
+                                View Project <i data-lucide="arrow-up-right"></i>
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card" data-category="analytics">
+
+                        <div class="project-image project-image-two">
+                            <i data-lucide="clapperboard"></i>
+                            <span>02 / BI DASHBOARD</span>
+                        </div>
+
+                        <div class="project-info">
+                            <span class="project-type">BUSINESS INTELLIGENCE</span>
+                            <h3>Anime Insights Dashboard</h3>
+
+                            <p>
+                                An interactive Power BI dashboard with KPIs,
+                                DAX measures, bookmarks, filters and navigation.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>Power BI</span>
+                                <span>DAX</span>
+                                <span>Excel</span>
+                            </div>
+
+                            <a href="#" class="project-link">
+                                View Project <i data-lucide="arrow-up-right"></i>
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card" data-category="analytics">
+
+                        <div class="project-image project-image-three">
+                            <i data-lucide="shopping-cart"></i>
+                            <span>03 / SQL</span>
+                        </div>
+
+                        <div class="project-info">
+                            <span class="project-type">DATA ANALYSIS</span>
+                            <h3>Pizza Sales Analysis</h3>
+
+                            <p>
+                                SQL-based sales analysis to identify revenue
+                                trends, customer preferences and business insights.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>SQL</span>
+                                <span>MySQL</span>
+                                <span>Data Analysis</span>
+                            </div>
+
+                            <a href="#" class="project-link">
+                                View Project <i data-lucide="arrow-up-right"></i>
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card" data-category="development">
+
+                        <div class="project-image project-image-four">
+                            <i data-lucide="utensils"></i>
+                            <span>04 / WEB APP</span>
+                        </div>
+
+                        <div class="project-info">
+                            <span class="project-type">FULL STACK DEVELOPMENT</span>
+                            <h3>Food Ordering Application</h3>
+
+                            <p>
+                                A web-based food ordering application with a
+                                modern interface and backend functionality.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>MongoDB</span>
+                                <span>Express</span>
+                                <span>React</span>
+                                <span>Node.js</span>
+                            </div>
+
+                            <a href="#" class="project-link">
+                                View Project <i data-lucide="arrow-up-right"></i>
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card" data-category="machine-learning">
+
+                        <div class="project-image project-image-five">
+                            <i data-lucide="brain-circuit"></i>
+                            <span>05 / MACHINE LEARNING</span>
+                        </div>
+
+                        <div class="project-info">
+                            <span class="project-type">PREDICTIVE ANALYTICS</span>
+                            <h3>Drug Analysis & Rating Prediction</h3>
+
+                            <p>
+                                A machine learning project exploring drug ratings
+                                and patterns using data preprocessing and prediction.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Pandas</span>
+                                <span>Random Forest</span>
+                            </div>
+
+                            <a href="#" class="project-link">
+                                View Project <i data-lucide="arrow-up-right"></i>
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card" data-category="development">
+
+                        <div class="project-image project-image-six">
+                            <i data-lucide="graduation-cap"></i>
+                            <span>06 / APPLICATION</span>
+                        </div>
+
+                        <div class="project-info">
+                            <span class="project-type">APPLICATION DEVELOPMENT</span>
+                            <h3>School Management System</h3>
+
+                            <p>
+                                A student management application designed
+                                to organize and manage student records.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Streamlit</span>
+                                <span>SQLite</span>
+                            </div>
+
+                            <a href="#" class="project-link">
+                                View Project <i data-lucide="arrow-up-right"></i>
+                            </a>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <div class="projects-footer">
+                    <a href="https://github.com/Bk-Akshat"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn btn-secondary">
+                        Explore GitHub
+                        <i data-lucide="github"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= EXPERIENCE SECTION ================= -->
+
+        <section class="experience section" id="experience">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-label">04 / MY JOURNEY</span>
+                    <h2>Education & <span>experience.</span></h2>
+                    <p>My academic and professional journey.</p>
+                </div>
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+                            <span class="timeline-date">EDUCATION</span>
+                            <h3>Bachelor of Technology</h3>
+                            <h4>Information Technology</h4>
+                            <p>
+                                Chandigarh Engineering College, Mohali.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+                            <span class="timeline-date">PROFESSIONAL EXPERIENCE</span>
+                            <h3>Experience & Internships</h3>
+                            <h4>Details to be added</h4>
+                            <p>
+                                Professional responsibilities, contributions
+                                and achievements will be added here.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+                            <span class="timeline-date">CONTINUOUS LEARNING</span>
+                            <h3>Technical Development</h3>
+                            <h4>Analytics & Software Development</h4>
+                            <p>
+                                Continuously developing technical skills
+                                through hands-on projects and learning.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CERTIFICATIONS SECTION ================= -->
+
+        <section class="certifications section" id="certifications">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-label">05 / ACHIEVEMENTS</span>
+                    <h2>Learning never <span>stops.</span></h2>
+                    <p>Certifications and achievements.</p>
+                </div>
+
+                <div class="certification-grid">
+
+                    <div class="certification-card">
+                        <i data-lucide="award"></i>
+                        <div>
+                            <h3>SQL 5-Star Badge</h3>
+                            <p>HackerRank</p>
+                        </div>
+                        <span class="certification-year">ACHIEVEMENT</span>
+                    </div>
+
+                    <div class="certification-card">
+                        <i data-lucide="database"></i>
+                        <div>
+                            <h3>Data Analyst Machine Learning with Artificial Intelligence</h3>
+                            <p>IT Vedant</p>
+                        </div>
+                        <span class="certification-year">CERTIFICATE</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT SECTION ================= -->
+
+        <section class="contact section" id="contact">
+
+            <div class="container">
+
+                <div class="contact-box">
+
+                    <span class="section-label">06 / GET IN TOUCH</span>
+
+                    <h2>Have an idea? Let's <span>make it happen.</span></h2>
+
+                    <p>
+                        I'm always interested in discussing technology,
+                        analytics, development opportunities and collaborations.
+                        Let's connect!
+                    </p>
+
+                    <a href="mailto:akshat31anand@gmail.com"
+                       class="btn btn-primary">
+                        Get In Touch
+                        <i data-lucide="send"></i>
+                    </a>
+
+                    <div class="contact-socials">
+
+                        <a href="https://www.linkedin.com/in/akshat-anand-6625b22a6"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            LinkedIn
+                        </a>
+
+                        <a href="https://github.com/Bk-Akshat"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            GitHub
+                        </a>
+
+                        <a href="mailto:akshat31anand@gmail.com">
+                            Email
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <a href="#home" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                Akshat<span class="logo-highlight">.</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+
+            <p>
+                Designed & Built by Akshat Anand.
+                <span id="current-year"></span>
+            </p>
+
+            <a href="#home" class="back-to-top" aria-label="Back to top">
+                <i data-lucide="arrow-up"></i>
+            </a>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
