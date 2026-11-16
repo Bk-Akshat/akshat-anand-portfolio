@@ -7,6 +7,7 @@ A personal portfolio website highlighting Akshat Anand's work in data analytics,
 - Responsive single-page layout with About, Skills, Projects, Experience, and Contact sections
 - Dark and light theme toggle
 - Interactive 3D background and motion effects
+- Clickable certificate gallery with full-size certificates
 - Resume download
 
 ## Run locally
@@ -27,3 +28,4 @@ The site will be available at `https://<your-github-username>.github.io/<reposit
 - [Lucide](https://lucide.dev/) icons, loaded from unpkg
 - DM Sans and Space Grotesk fonts, loaded from Google Fonts
 - `Akshat_Anand_Resume.pdf`, linked by the site as a downloadable resume
+- Certificate images in `Certificate/`, displayed as previews that open full-size in a new tab
