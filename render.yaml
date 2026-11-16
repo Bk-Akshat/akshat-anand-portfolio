@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: akshat-anand-portfolio
+    runtime: static
+    repo: https://github.com/Bk-Akshat/akshat-anand-portfolio
+    branch: main
+    buildCommand: echo "No build step required"
+    staticPublishPath: .
+    autoDeployTrigger: commit

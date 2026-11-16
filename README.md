@@ -16,11 +16,19 @@ This is a static website. Open `index.html` in a browser, or serve this folder w
 
 ## Deploy with GitHub Pages
 
-1. Push the project files to the `main` branch of a GitHub repository.
-2. In the repository, open **Settings > Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**, select `main` and the `/ (root)` folder, then save.
+GitHub Pages is configured to deploy automatically from the `main` branch using the workflow in `.github/workflows/deploy.yml`.
 
 The site will be available at `https://<your-github-username>.github.io/<repository-name>/` after GitHub Pages finishes deploying.
+
+## Deploy with Render
+
+The root-level `render.yaml` defines this project as a static site and deploys the repository root from `main`.
+
+1. Sign in to the [Render Dashboard](https://dashboard.render.com/).
+2. Select **New > Blueprint** and connect the `Bk-Akshat/akshat-anand-portfolio` GitHub repository if prompted.
+3. Review the `akshat-anand-portfolio` static site and apply the Blueprint.
+
+Render deploys future commits to `main` automatically. If this repository is already connected to a Render static site, pushes to `main` should trigger its automatic deploy without creating another service.
 
 ## Assets and dependencies
 
