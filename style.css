@@ -478,23 +478,17 @@ img {
     color: #36d69a;
 }
 
-.profile-avatar {
-    width: 120px;
-    height: 120px;
+.profile-pic {
+    display: block;
+    width: 150px;
+    height: 150px;
     margin: 35px auto 20px;
-    display: grid;
-    place-items: center;
     border-radius: 50%;
-    background: var(--accent-gradient);
-    box-shadow: 0 0 40px rgba(145, 105, 255, 0.28);
-    border: 5px solid var(--bg-secondary);
-}
-
-.profile-avatar span {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 43px;
-    font-weight: 800;
-    color: white;
+    object-fit: cover;
+    object-position: center;
+    border: 3px solid transparent;
+    background: linear-gradient(#101827, #101827) padding-box,
+                linear-gradient(135deg, #38aaff, #9855ff) border-box;
 }
 
 .profile-card h3 {
@@ -576,8 +570,8 @@ img {
 }
 
 .tag-two {
-    bottom: 85px;
-    right: -10px;
+    bottom: 35px;
+    right: -130px;
     animation-delay: 1s;
 }
 
@@ -1356,7 +1350,7 @@ img {
     }
 
     .tag-two {
-        bottom: 30px;
+        bottom: 15px;
         right: -4px;
     }
 
@@ -1667,7 +1661,7 @@ body {
 /* Layers sit at different depths, so they shift against each other */
 
 .profile-card-top        { transform: translateZ(18px); }
-.profile-card .profile-avatar { transform: translateZ(52px); }
+.profile-card .profile-pic    { transform: translateZ(52px); }
 .profile-card h3         { transform: translateZ(34px); }
 .profile-card > p        { transform: translateZ(22px); }
 
